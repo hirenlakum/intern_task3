@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.todo-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+    
+
+.task-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+
+
+.task-card h3 {
+    margin: 0;
+    color: #222;
+}
+
+
+.task-card p {
+    color: #555;
+    margin: 5px 0 10px;
+}
+
+
+.task-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.task-buttons button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-buttons .update {
+    background-color: #007bff;
+}
+
+.task-buttons .delete {
+    background-color: #dc3545;
+}
+
+.task-buttons button:hover {
+    opacity: 0.9;
+}
+
+
+.add-task-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+
+.add-task-form input,
+.add-task-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-task-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-task-form button:hover {
+    background-color: #218838;
+}
+
