@@ -1,6 +1,7 @@
 import {createContext, useEffect} from "react"
 import { useState } from "react"
 export const TaskContext = createContext()
+import { v4 as uuidv4 } from 'uuid';
 
 
 const TaskProvider = ({children}) => {
@@ -17,13 +18,13 @@ const TaskProvider = ({children}) => {
 
     
 
-    const AddTask = (id,title,description) => {
+    const AddTask = (title,description) => {
 
        const GetList= JSON.parse(localStorage.getItem("ToDoTask"))
        
 
     const localTask = [...GetList,{
-    id:id,
+    id:uuidv4(),
     title:title,
     description:description
 }]
