@@ -1,6 +1,6 @@
 import "../App.css"
 import MyTask from "./MyTask"
-import { useContext, useEffect } from "react"
+import { useContext } from "react"
 import { TaskContext } from "../Store/TaskStore"
 import AddTask from "./AddTask"
 import NoTask from "./NoTask"

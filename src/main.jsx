@@ -5,6 +5,7 @@ import {createBrowserRouter,RouterProvider} from "react-router-dom"
 import Home from './Components/Home.jsx'
 import MyTask from './Components/MyTask.jsx'
 import UpdateTask from './Components/UpdateTask.jsx'
+import Loading from './Components/Loading.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,9 @@ const router = createBrowserRouter([
       },
       {
       path:"/updateTask/:id/:title/:description",element:<UpdateTask/>
+      },
+      {
+       path:"/loading",element:<Loading/>
       },
     ],
   }

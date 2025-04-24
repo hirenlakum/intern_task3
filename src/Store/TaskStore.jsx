@@ -32,7 +32,7 @@ const TaskProvider = ({children}) => {
 setMyTask(localTask)
 
 localStorage.setItem("ToDoTask",JSON.stringify(localTask))
-    }
+    } 
 
     const DeleteTask = (id) => {
 

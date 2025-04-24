@@ -1,11 +1,12 @@
 import "../App.css"
 import { useContext } from "react"
 import { TaskContext } from "../Store/TaskStore"
-import { Navigate, useNavigate } from "react-router-dom"
+import {useNavigate } from "react-router-dom"
 
 const MyTask = ({data}) => {
 
     const {DeleteTask} = useContext(TaskContext)
+  
     const navigate = useNavigate()
 
     const deleteTask = (e) => {
@@ -20,12 +21,8 @@ const MyTask = ({data}) => {
     }
     return(
         <>
-       
-    
-
     <div className="task-card">
-
-        <h3>{data.title}</h3>
+  <h3>{data.title}</h3>
         <p>{data.description}</p>
         <div className="task-buttons">
             <button className="update" onClick={update}>Update</button>
